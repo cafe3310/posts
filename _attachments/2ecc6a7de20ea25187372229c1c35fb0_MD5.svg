@@ -1,0 +1,185 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 步骤圆圈渐变 -->
+    <radialGradient id="step1" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="step2" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="step3" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="step4" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="step5" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="step6" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- 箭头标记 -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+    </marker>
+    
+    <!-- 阴影滤镜 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="50" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="28" font-weight="bold" fill="#1e293b">
+    LLM 协作流程：高质量文档产出闭环
+  </text>
+  
+  <!-- 中心圆圈 - 核心理念 -->
+  <circle cx="400" cy="280" r="80" fill="#f8fafc" stroke="#e2e8f0" stroke-width="3" filter="url(#shadow)"/>
+  <text x="400" y="270" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="16" font-weight="bold" fill="#1e293b">
+    真实 · 快速
+  </text>
+  <text x="400" y="290" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="16" font-weight="bold" fill="#1e293b">
+    高质量文档产出
+  </text>
+  
+  <!-- 步骤圆圈和连接线 -->
+  <!-- 步骤1：准备上下文 -->
+  <circle cx="400" cy="140" r="35" fill="url(#step1)" filter="url(#shadow)"/>
+  <text x="400" y="148" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="18" font-weight="bold" fill="white">1</text>
+  <text x="400" y="110" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="14" font-weight="600" fill="#1e293b">
+    准备详实上下文
+  </text>
+  <text x="400" y="125" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="12" fill="#64748b">
+    (结构化输入)
+  </text>
+  
+  <!-- 步骤2：初稿生成 -->
+  <circle cx="580" cy="200" r="35" fill="url(#step2)" filter="url(#shadow)"/>
+  <text x="580" y="208" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="18" font-weight="bold" fill="white">2</text>
+  <text x="580" y="170" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="14" font-weight="600" fill="#1e293b">
+    初稿生成
+  </text>
+  <text x="580" y="185" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="12" fill="#64748b">
+    (快速产出)
+  </text>
+  
+  <!-- 步骤3：人工审核 -->
+  <circle cx="580" cy="360" r="35" fill="url(#step3)" filter="url(#shadow)"/>
+  <text x="580" y="368" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="18" font-weight="bold" fill="white">3</text>
+  <text x="580" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="14" font-weight="600" fill="#1e293b">
+    人工审核订正
+  </text>
+  <text x="580" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="12" fill="#64748b">
+    (核实数据事实)
+  </text>
+  
+  <!-- 步骤4：多轮迭代 -->
+  <circle cx="400" cy="420" r="35" fill="url(#step4)" filter="url(#shadow)"/>
+  <text x="400" y="428" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="18" font-weight="bold" fill="white">4</text>
+  <text x="400" y="450" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="14" font-weight="600" fill="#1e293b">
+    多轮迭代
+  </text>
+  <text x="400" y="465" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="12" fill="#64748b">
+    (逐步收敛)
+  </text>
+  
+  <!-- 步骤5：风格调整 -->
+  <circle cx="220" cy="360" r="35" fill="url(#step5)" filter="url(#shadow)"/>
+  <text x="220" y="368" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="18" font-weight="bold" fill="white">5</text>
+  <text x="220" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="14" font-weight="600" fill="#1e293b">
+    风格调整
+  </text>
+  <text x="220" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="12" fill="#64748b">
+    (适配听众场合)
+  </text>
+  
+  <!-- 步骤6：复用优化 -->
+  <circle cx="220" cy="200" r="35" fill="url(#step6)" filter="url(#shadow)"/>
+  <text x="220" y="208" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="18" font-weight="bold" fill="white">6</text>
+  <text x="220" y="170" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="14" font-weight="600" fill="#1e293b">
+    复用批注评论
+  </text>
+  <text x="220" y="185" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="12" fill="#64748b">
+    (持续优化)
+  </text>
+  
+  <!-- 连接箭头 -->
+  <path d="M 430 160 Q 500 180 550 180" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 580 235 L 580 325" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 550 380 Q 480 400 430 400" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 370 400 Q 300 380 250 380" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 220 235 L 220 325" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 250 180 Q 320 160 370 160" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 持续优化循环箭头 -->
+  <path d="M 180 220 Q 120 280 180 340" stroke="#ef4444" stroke-width="3" fill="none" 
+        stroke-dasharray="8,4" marker-end="url(#arrowhead)"/>
+  <text x="80" y="285" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="14" font-weight="bold" fill="#ef4444" transform="rotate(-30 80 285)">
+    持续优化
+  </text>
+  
+  <!-- 核心关注点框 -->
+  <rect x="50" y="480" width="700" height="100" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="70" y="505" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="16" font-weight="bold" fill="#1e293b">
+    核心关注点：
+  </text>
+  <text x="70" y="525" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="14" fill="#475569">
+    ● 注意人工核实，勿全面轻信 LLM 效果
+  </text>
+  <text x="70" y="545" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="14" fill="#475569">
+    ● 充分利用零散信息、经验和数据
+  </text>
+  <text x="70" y="565" font-family="system-ui, -apple-system, sans-serif" 
+        font-size="14" fill="#475569">
+    ● 整合评论与反馈，结合工作流收集，高效再利用
+  </text>
+</svg>
